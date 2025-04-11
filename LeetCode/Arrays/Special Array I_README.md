@@ -1,0 +1,32 @@
+# Special Array I
+
+## Problem Statement
+
+Problem statement could not be extracted.
+
+## Solution
+
+```unknown
+class Solution:
+    def isArraySpecial(self, nums: List[int]) -> bool:
+        c=0
+        b=False
+        if len(nums)==1:
+            
+            return True
+
+        for i in range(0,len(nums)-1):
+            if nums[i]%2==1 and nums[i+1]%2==0 or nums[i]%2==0 and nums[i+1]%2==1:
+                b=True
+            else:
+                b=False
+                c+=1
+                
+
+        if c!=0:
+            return False
+
+        else:
+            return True
+        
+```

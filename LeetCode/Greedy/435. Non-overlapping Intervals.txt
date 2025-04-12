@@ -1,0 +1,10 @@
+            
+            #if curr list starts before the prev ends then cnt
+            if(intervals[i][0]<pre):
+                c+=1
+                
+            else:
+                
+                pre=intervals[i][1]
+                
+        return c-1

@@ -1,0 +1,7 @@
+            minval=min(minval,arrays[i][0])
+            maxval=max(maxval,arrays[i][-1])
+                
+                #maxi=max(maxi,(l-k))
+                
+        return maxi
+                

@@ -1,0 +1,12 @@
+// 3394__Check_if_Grid_can_be_Cut_into_Sections.txt
+
+class Solution:
+    def checkValidCuts(self, n: int, rectangles: List[List[int]]) -> bool:
+        def check(intervals):
+            intervals.sort()
+            
+            sections = 0
+            max_end = intervals[0][1]
+            
+            for start, end in intervals:
+                if max_end <= start:

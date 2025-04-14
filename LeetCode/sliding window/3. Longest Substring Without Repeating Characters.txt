@@ -1,0 +1,12 @@
+// 3__Longest_Substring_Without_Repeating_Characters.txt
+
+class Solution:
+    def lengthOfLongestSubstring(self, s: str) -> int:
+        d=[-1]*256
+        l=r=0
+        n=len(s)
+        maxi=0
+        
+        while(r<n):
+            if(d[ord(s[r])]!=-1):
+                l=max((d[ord(s[r])])+1,l)

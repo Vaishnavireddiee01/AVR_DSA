@@ -1,1 +1,1 @@
-// Error detecting problem: extractLeetCodeProblemName is not defined
+// Error detecting problem: extractLeetCodeSolution is not defined
